@@ -5,7 +5,7 @@
 import { dynamo } from "../../_fake/dynamo";
 import { VehicleRepository } from "../../repositories/vehicle";
 
-class DynamoDbVehicle implements VehicleRepository {
+class DynamoDbVehicleRepository implements VehicleRepository {
   constructor() {}
 
   async get(vin: string) {
@@ -15,4 +15,4 @@ class DynamoDbVehicle implements VehicleRepository {
   }
 }
 
-export default DynamoDbVehicle;
+export default DynamoDbVehicleRepository;
